@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.salo.app.salomonvaldez.com.taller_programacion_android_salo.Ejercicio_N_41">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/borde_linerlayout"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="Compra de Automovil Segun Devaluacion"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/borde_linerlayout"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/borde_edittext"
+
+                    android:paddingBottom="4dp"
+                    android:layout_weight="0.35"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese costo\n (Auto/Terreno)\n "
+                        android:textAlignment="center"
+                        android:paddingBottom="4dp"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/txtCosto"
+                        android:background="@drawable/borde_edittext"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/borde_edittext"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_margin="3dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese tasa\n devaluacion \n Coche \n (Mensual)"
+                        android:textAlignment="center"
+                        android:paddingBottom="4dp"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/txtDevaluacionCoche"
+
+                        android:background="@drawable/borde_edittext"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/borde_edittext"
+                    android:layout_margin="3dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="4dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese tasa\n valuacion \n Terreno \n (Mensual)"
+                        android:textAlignment="center"
+                        android:paddingBottom="4dp"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/txtValuacionTerreno"
+
+                        android:background="@drawable/borde_edittext"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/btnCalcularCompra"
+                    android:layout_weight="0.52" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:background="@drawable/borde_edittext"
+                    android:textStyle="bold"
+                    android:layout_weight="2.80"
+                    android:id="@+id/tvResultadoCompra"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/borde_linerlayout"
+            android:layout_marginTop="15dp"
+            android:layout_weight="4.87">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="...::: CUESTIONARIO :::..."
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n ►Una persona se encuentra con un problema de comprar un automóvil o un terreno, los cuales cuestan exactamente lo mismo. Sabe que mientras el automóvil se devalúa, con el terreno sucede lo contrario. Esta persona comprara el automóvil si al cabo de tres años la devaluación de este no es mayor que la mitad del incremento del valor del terreno. Ayúdale a esta persona a determinar si debe o no comprar el automóvil."
+                android:layout_weight="2.26"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

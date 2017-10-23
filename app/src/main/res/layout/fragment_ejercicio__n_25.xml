@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.salo.app.salomonvaldez.com.taller_programacion_android_salo.Ejercicio_N_25">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:background="@drawable/borde_linerlayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sueldo Anual"/>
+
+            <EditText
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="40000"
+                android:ems="10"
+                android:editable="false"
+                android:id="@+id/txtSueldoAnual" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:background="@drawable/borde_linerlayout">
+
+            <RadioGroup
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGrupoOpciones"
+                >
+
+                <RadioButton
+                    android:text="Mas de 10 Años"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio10Años"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Menos de 10 Años"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioMenos10años"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Menos de 5 Años"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioMenos5Años"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Menos de 3 Años"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioMenos3Años"
+                    android:layout_weight="1" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/btnCalcular"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:background="@drawable/borde_linerlayout"
+                android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sueldo"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSueldoNeto"
+                android:layout_weight="0.59" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/borde_linerlayout"
+            android:layout_marginTop="15dp"
+            android:layout_weight="3.20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="...::: CUESTIONARIO :::..."
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="\n ► Que calcule el sueldo que le corresponde al trabajador de una empresa que cobra 40.000 euros anuales, el programa debe realizar los cálculos en función de los siguientes criterios:\n
+              a.  Si lleva más de 10 años en la empresa se le aplica un aumento del 10%. \n
+                b.  Si lleva menos de 10 años pero más que 5 se le aplica un aumento del 7%.\n
+                c.  Si lleva menos de 5 años pero más que 3 se le aplica un aumento del 5%.\n
+                d.  Si lleva menos de 3 años se le aplica un aumento del 3%.\n
+                "
+                android:layout_weight="16.05"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView13" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

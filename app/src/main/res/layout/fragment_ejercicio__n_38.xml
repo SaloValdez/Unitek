@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.salo.app.salomonvaldez.com.taller_programacion_android_salo.Ejercicio_N_38">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/borde_linerlayout"
+            android:layout_margin="3dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/borde_linerlayout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMC"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese su Peso(Kg.):"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:background="@drawable/borde_edittext"
+                        android:layout_weight="0.38"
+                        android:text=""
+                        android:id="@+id/txtPesoImc"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:paddingTop="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese su Altura (m.):"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:background="@drawable/borde_edittext"
+                        android:layout_weight="0.40"
+                        android:text=""
+                        android:id="@+id/txtAlturaImc"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/btnCalcularImc"
+                    android:layout_weight="0.32" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borde_linerlayout"
+                    android:id="@+id/tvResultadoImc"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/borde_linerlayout"
+            android:layout_marginTop="15dp"
+            android:layout_weight="6.52">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="...::: CUESTIONARIO :::..."
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n ► Construir un programa que calcule el índice de masa corporal de una persona (IMC = peso (kg) / altura2 (m)) e indique el estado en el que se encuentra esa persona en función del valor de IMC: Valor de IMC Diagnóstico menor a 16 Criterio de ingreso en hospital de 16 a 17 infrapeso de 17 a 18 bajo peso de 18 a 25 peso normal (saludable) de 25 a 30 sobrepeso (obesidad de grado I) de 30 a 35 sobrepeso crónico (obesidad de grado II) de 35 a 40 obesidad premórbida (obesidad de grado III) mayor a 40 obesidad mórbida (obesidad de grado IV) Nota 1: se recomienda el empleo de sentencias if–else anidadas. Nota 2: Los operandos (peso y altura) deben ser introducidos por teclado por el usuario."
+                android:layout_weight="0.70"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

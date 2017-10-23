@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.salo.app.salomonvaldez.com.taller_programacion_android_salo.Ejercicio_N_31">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_margin="3dp"
+          android:background="@drawable/borde_linerlayout">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:weightSum="1">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Ingrese Numero:"/>
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtNumeroAbs"
+                  android:layout_weight="0.32" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:weightSum="1">
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Verificar"
+                  android:id="@+id/btnVerificarAbs"
+                  android:layout_weight="0.23" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:weightSum="1">
+
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtResultadoAbs"
+                  android:layout_weight="0.51"
+                  android:textColor="@color/colorAccent"
+                  android:background="@drawable/borde_linerlayout"/>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="89dp"
+          android:orientation="vertical"
+          android:padding="10dp"
+          android:background="@drawable/borde_linerlayout"
+          android:layout_marginTop="15dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="...::: CUESTIONARIO :::..."
+                  android:textColor="@color/colorAccent" />
+          </LinearLayout>
+          <View
+              android:layout_width="fill_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/colorPrimary"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="\n ► Determinar si el módulo de un número es menor que 15. No puedes usar la función valor absoluto."
+              android:layout_weight="0.70"
+              android:textColor="@color/colorPrimary" />
+      </LinearLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

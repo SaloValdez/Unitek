@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="android.salo.app.salomonvaldez.com.taller_programacion_android_salo.Ejercicio_N_01">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- CONTENEDOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="0.61">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese un numero del 1 - 5: "
+                    android:layout_margin="3dp"/>
+                <EditText
+                    android:layout_width="192dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/txtNumero"
+                    android:background="@drawable/borde_edittext"
+                    android:layout_weight="0.64"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnVerificar"
+                    android:text="Verificar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="0.48">
+
+                <EditText
+                    android:layout_width="270dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/txtResultado"
+                    android:background="@drawable/borde_edittext"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/borde_linerlayout"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.67">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...::: CUESTIONARIO :::..."
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n ► Crear una aplicación que permita leer un número del 1 al 5 y diga si es primo o no."
+                    android:layout_weight="0.70"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>
